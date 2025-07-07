@@ -82,6 +82,9 @@ cc_defaults {
     }) + select(soong_config_variable("exynos_hwc", "uses_hwc_services"), {
         "true": [ "-DUSES_HWC_SERVICES" ],
         default: [],
+    }) + select(soong_config_variable("exynos_hwc", "force_client_video"), {
+        "true": ["-DHWC_FORCE_CLIENT_VIDEO"],
+        default: [],
     }),
 
     static_libs: [
