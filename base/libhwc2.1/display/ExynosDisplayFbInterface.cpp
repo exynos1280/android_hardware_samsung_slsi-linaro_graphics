@@ -23,6 +23,7 @@
 
 #include <linux/fb.h>
 #include "ExynosGraphicBuffer.h"
+#include "ExynosDisplay.h"
 
 using namespace android;
 using vendor::graphics::ExynosGraphicBufferMeta;
