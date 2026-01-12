@@ -87,7 +87,7 @@ cc_defaults {
         true: ["-DUSES_VIRTUAL_DISPLAY"],
         default: [],
     }) + select(soong_config_variable("exynos_hwc", "force_client_video"), {
-        "true": ["-DHWC_FORCE_CLIENT_VIDEO"],
+        true: ["-DHWC_FORCE_CLIENT_VIDEO"],
         default: [],
     }),
 
